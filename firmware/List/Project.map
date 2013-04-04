@@ -1,0 +1,39 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+__ds18b20_scratch_pad                                             0x09BC       9
+rom_codes                                                         0x09C5      72
+temperature                                                       0x0A0D      32
+temperature_old                                                   0x0A2D     960
+lcd_buffer                                                        0x0DED      30
+input_buffer                                                      0x0E0B      30
+temp_check                                                        0x0E29       1
+rx_buffer0                                                        0x0E2A      30
+tx_buffer0                                                        0x0E48      30
+rx_wr_index0                                                      0x0E66       1
+rx_rd_index0                                                      0x0E67       1
+rx_counter0                                                       0x0E68       1
+tx_wr_index0                                                      0x0E69       1
+tx_rd_index0                                                      0x0E6A       1
+tx_counter0                                                       0x0E6B       1
+_seed                                                             0x0E6C       4
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+dev                                                               0x0000       6
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+milisec                                                           R4           1
+hours                                                             R3           1
+minutes                                                           R6           1
+seconds                                                           R5           1
+time_chaeck_const                                                 R8           1
+devices                                                           R7           1
+temp_old_counter                                                  R9,R10       2
+write_old_memory                                                  R12          1
+control_locker                                                    R13,R14      2
+agresive_check                                                    R11          1
+rx_buffer_overflow0                                               GPIOR0.0  1bit
